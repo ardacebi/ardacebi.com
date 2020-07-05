@@ -1,0 +1,117 @@
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+h4 {
+  font-weight: 400;
+}
+
+h5 {
+  font-weight: 400;
+}
+
+p {
+  font-weight: 400;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.name {}
+
+.title {
+  margin-top: -10px;
+}
+
+i.fa {
+  display: inline-block;
+  font-size: 20px;
+  color: black;
+}
+
+.fa[first-child] {
+  margin-left: 0px;
+}
+
+.fa[last-child] {
+  margin-right: 0px;
+}
+
+.fa {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.contentdiv {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.mailicon {
+  transition: .2s;
+  cursor: pointer;
+}
+
+.mailicon:hover {
+  color: grey;
+}
+
+.githubicon {
+  transition: .2s;
+  cursor: pointer;
+}
+
+.githubicon:hover {
+  color: grey;
+}
+
+.instagramicon {
+  transition: .2s;
+  cursor: pointer;
+}
+
+.instagramicon:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.twittericon {
+  transition: .2s;
+  cursor: pointer;
+}
+
+.twittericon:hover {
+  color: #1DA1F2;
+}
+
+.dribbbleicon {
+  transition: .2s;
+  cursor: pointer;
+}
+
+.dribbbleicon:hover {
+  color: #ee66aa;
+}
