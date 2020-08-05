@@ -107,6 +107,15 @@ i.fa {
   color: #1DA1F2;
 }
 
+.linkedinicon {
+  transition: .2s;
+  cursor: pointer;
+}
+
+.linkedinicon:hover {
+  color: #2867B2;
+}
+
 .dribbbleicon {
   transition: .2s;
   cursor: pointer;
