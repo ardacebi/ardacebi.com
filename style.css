@@ -46,10 +46,6 @@ p {
   color: white;
 }
 
-i.fa {
-  color: white;
-}
-
 .name {
   font-size: 60px;
   font-weight: 700;
@@ -113,7 +109,7 @@ i.fa {
 i.fa {
   display: inline-block;
   font-size: 20px;
-  color: black;
+  color: white;
 }
 
 .fa[first-child] {
