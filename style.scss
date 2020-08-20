@@ -83,6 +83,12 @@ a {
   }
 }
 
+.card:hover {
+  .cardnumber {
+    z-index: -1;
+  }
+}
+
 .cardnumber {
   font-size: 180px;
   font-weight: 900;
@@ -95,7 +101,6 @@ a {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  z-index: -1;
 }
 
 .cardtitle {
