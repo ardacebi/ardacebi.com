@@ -52,7 +52,7 @@ body {
 
 .cardlist {
   margin-top: 50px;
-  margin-bottom: 200px;
+  margin-bottom: 60px;
 }
 
 .card {
@@ -120,7 +120,7 @@ i.fa {
 }
 
 .contentdiv {
-  margin-top: 400px;
+  margin-top: 420px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -215,6 +215,10 @@ i.fa {
     margin-top: -10px;
     margin-left: 120px;
   }
+
+  .contentdiv {
+    margin-top: 450px;
+  }
 }
 
 @media only screen and (max-width: 690px) {
@@ -242,6 +246,10 @@ i.fa {
   .carddescrp {
     margin-left: 80px;
   }
+
+  .contentdiv {
+    margin-top: 400px;
+  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -258,6 +266,9 @@ i.fa {
     margin-top: -215px;
   }
   
+  .contentdiv {
+    margin-top: 450px;
+  }
 }
 
 @media only screen and (max-width: 530px) {
@@ -270,6 +281,9 @@ i.fa {
     bottom: -50px;
     right: 95px;
   }
+  .contentdiv {
+    margin-top: 500px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -281,6 +295,10 @@ i.fa {
   .cardnumber {
     bottom: -60px;
     right: 90px;
+  }
+
+  .contentdiv {
+    margin-top: 550px;
   }
 }
 
@@ -298,6 +316,14 @@ i.fa {
 
   .cardtitle {
     margin-top: -150px;
+  }
+
+  .name {
+    font-size: 50px;
+  }
+
+  i.fa {
+    font-size: 18px;
   }
 }
  
