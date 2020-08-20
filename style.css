@@ -91,6 +91,13 @@ a {
   }
 }
 
+@media (hover: hover) and (pointer: fine) {
+  .icon:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
 .card:hover .cardnumber {
   z-index: -1;
 }
