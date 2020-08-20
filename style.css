@@ -215,15 +215,6 @@ i.fa {
   display: none;
 }
 
-.iconsdivthirdrow {
-  margin-bottom: 15px;
-  display: none;
-}
-
-.iconsdivfourthrow {
-  display: none;
-}
-
 @media only screen and (max-width: 840px) {
   .card {
     width: 500px;
@@ -334,18 +325,6 @@ i.fa {
   }
   .contentdiv {
     margin-top: 500px;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .iconsdivfirstrow,
-  .iconsdivsecondrow {
-    display: none;
-  }
-
-  .iconsdivthirdrow,
-  .iconsdivfourthrow {
-    display: block;
   }
 }
 
