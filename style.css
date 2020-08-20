@@ -73,8 +73,10 @@ p {
   transition: transform 0.2s;
 }
 
-.card:hover {
-  transform: scale(1.1);
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    transform: scale(1.1);
+  }
 }
 
 .cardnumber {
