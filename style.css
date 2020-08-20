@@ -123,10 +123,10 @@ a {
 i.fa {
   display: inline-block;
   border-radius: 60px;
-  border: 2px solid grey;
   padding: 0.6em 0.7em;
-  font-size: 20px;
+  font-size: 26px;
   color: white;
+  background-color: rgba(128, 128, 128, 0.253);
 }
 
 .fa[first-child] {
@@ -178,9 +178,7 @@ i.fa {
 }
 
 .instagramicon:hover {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #d6249f;
 }
 
 .twittericon {
@@ -247,6 +245,13 @@ i.fa {
     font-size: 150px;
     bottom: 0px;
   }
+  .iconsdivfull {
+    display: none;
+  }
+  .iconsdivfirstrow,
+  .iconsdivsecondrow {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 750px) {
@@ -263,16 +268,6 @@ i.fa {
   }
   .contentdiv {
     margin-top: 450px;
-  }
-}
-
-@media only screen and (max-width: 695px) {
-  .iconsdivfull {
-    display: none;
-  }
-  .iconsdivfirstrow,
-  .iconsdivsecondrow {
-    display: block;
   }
 }
 
@@ -364,7 +359,7 @@ i.fa {
     font-size: 50px;
   }
   i.fa {
-    font-size: 18px;
+    font-size: 21px;
   }
 }
 
