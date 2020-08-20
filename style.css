@@ -110,6 +110,9 @@ p {
 
 i.fa {
   display: inline-block;
+  border-radius: 60px;
+  border: 2px solid grey;
+  padding: 0.6em 0.7em;
   font-size: 20px;
   color: white;
 }
@@ -199,6 +202,28 @@ i.fa {
   color: #ee66aa;
 }
 
+.iconarea {
+  margin-top: 30px;
+}
+
+.iconsdivfirstrow {
+  margin-bottom: 15px;
+  display: none;
+}
+
+.iconsdivsecondrow {
+  display: none;
+}
+
+.iconsdivthirdrow {
+  margin-bottom: 15px;
+  display: none;
+}
+
+.iconsdivfourthrow {
+  display: none;
+}
+
 @media only screen and (max-width: 840px) {
   .card {
     width: 500px;
@@ -233,6 +258,17 @@ i.fa {
 
   .contentdiv {
     margin-top: 450px;
+  }
+}
+
+@media only screen and (max-width: 695px) {
+  .iconsdivfull {
+    display: none;
+  }
+
+  .iconsdivfirstrow,
+  .iconsdivsecondrow {
+    display: block;
   }
 }
 
@@ -298,6 +334,18 @@ i.fa {
   }
   .contentdiv {
     margin-top: 500px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .iconsdivfirstrow,
+  .iconsdivsecondrow {
+    display: none;
+  }
+
+  .iconsdivthirdrow,
+  .iconsdivfourthrow {
+    display: block;
   }
 }
 
