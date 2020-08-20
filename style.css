@@ -36,10 +36,68 @@ body {
   height: 100%;
 }
 
-.name {}
+.innerbody {
+  
+}
+
+.name {
+  font-size: 60px;
+  font-weight: 700;
+}
 
 .title {
-  margin-top: -10px;
+  margin-top: -20px;
+  text-transform: uppercase;
+}
+
+.cardlist {
+  margin-top: 50px;
+  margin-bottom: 200px;
+}
+
+.card {
+  width: 600px;
+  height: 170px;
+  background-color: rgba(128, 128, 128, 0.253);
+  border-radius: 16px;
+  padding-left: 30px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  margin-bottom: -100px;
+  -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+   transition: transform .2s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.cardnumber {
+  font-size: 180px;
+  font-weight: 900;
+  right: 100px;
+  bottom: 15px;
+  position: relative;
+  color: rgb(49, 49, 49);
+}
+
+.cardtitle {
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: -350px;
+  margin-left: 150px;
+}
+
+.cardtitlenumber {
+  color: grey;
+}
+
+.carddescrp {
+  padding-left: 150px;
 }
 
 i.fa {
@@ -62,6 +120,7 @@ i.fa {
 }
 
 .contentdiv {
+  margin-top: 400px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -128,6 +187,10 @@ i.fa {
 @media (prefers-color-scheme: dark) {
   body {
     background-color: black;
+  }
+
+  .innerbody {
+    background-color: grey;
   }
 
   h1,
