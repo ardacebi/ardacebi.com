@@ -3,7 +3,7 @@ h2,
 h3,
 h4,
 p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -31,13 +31,23 @@ p {
 }
 
 body {
+  background-color: black;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
 
-.innerbody {
-  
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  color: white;
+}
+
+i.fa {
+  color: white;
 }
 
 .name {
@@ -64,7 +74,7 @@ body {
   padding-right: 20px;
   padding-bottom: 20px;
   margin-bottom: -100px;
-   transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .card:hover {
@@ -79,10 +89,10 @@ body {
   position: relative;
   color: rgb(49, 49, 49);
   -moz-user-select: none;
-   -khtml-user-select: none;
-   -webkit-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .cardtitle {
@@ -129,7 +139,7 @@ i.fa {
 }
 
 .mailicon {
-  transition: .2s;
+  transition: 0.2s;
   cursor: pointer;
 }
 
@@ -138,7 +148,7 @@ i.fa {
 }
 
 .githubicon {
-  transition: .2s;
+  transition: 0.2s;
   cursor: pointer;
 }
 
@@ -147,36 +157,43 @@ i.fa {
 }
 
 .instagramicon {
-  transition: .2s;
+  transition: 0.2s;
   cursor: pointer;
 }
 
 .instagramicon:hover {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .twittericon {
-  transition: .2s;
+  transition: 0.2s;
   cursor: pointer;
 }
 
 .twittericon:hover {
-  color: #1DA1F2;
+  color: #1da1f2;
 }
 
 .linkedinicon {
-  transition: .2s;
+  transition: 0.2s;
   cursor: pointer;
 }
 
 .linkedinicon:hover {
-  color: #2867B2;
+  color: #2867b2;
 }
 
 .dribbbleicon {
-  transition: .2s;
+  transition: 0.2s;
   cursor: pointer;
 }
 
@@ -203,8 +220,8 @@ i.fa {
 
 @media only screen and (max-width: 750px) {
   .card {
-     width: 450px;
-     margin-bottom: -60px;
+    width: 450px;
+    margin-bottom: -60px;
   }
 
   .cardtitle {
@@ -265,7 +282,7 @@ i.fa {
   .cardtitle {
     margin-top: -215px;
   }
-  
+
   .contentdiv {
     margin-top: 450px;
   }
@@ -326,7 +343,8 @@ i.fa {
     font-size: 18px;
   }
 }
- 
+
+/* DISABLE THEMING
 @media (prefers-color-scheme: dark) {
   body {
     background-color: black;
@@ -350,3 +368,4 @@ i.fa {
   }
 
 }
+*/
