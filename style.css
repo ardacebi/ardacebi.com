@@ -46,6 +46,10 @@ p {
   color: white;
 }
 
+a {
+  color: grey;
+}
+
 .name {
   font-size: 60px;
   font-weight: 700;
@@ -91,6 +95,7 @@ p {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  z-index: -1;
 }
 
 .cardtitle {
@@ -213,6 +218,14 @@ i.fa {
 
 .iconsdivsecondrow {
   display: none;
+}
+
+.worksdiv {
+  margin-top: -20px;
+}
+
+.worksrow {
+  margin-bottom: -6px;
 }
 
 @media only screen and (max-width: 840px) {
