@@ -3,7 +3,7 @@ h2,
 h3,
 h4,
 p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h1 {
@@ -31,21 +31,121 @@ p {
 }
 
 body {
-  justify-content: center;
-  align-items: center;
+  background-color: black;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
 }
 
-.name {}
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  color: white;
+}
+
+a {
+  color: grey;
+}
+
+.name {
+  font-size: 60px;
+  font-weight: 700;
+}
 
 .title {
-  margin-top: -10px;
+  margin-top: -20px;
+  text-transform: uppercase;
+}
+
+.cardlist {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.card {
+  width: 600px;
+  height: 170px;
+  background-color: rgba(128, 128, 128, 0.253);
+  border-radius: 16px;
+  padding-left: 30px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  margin-bottom: -100px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .card:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .icon:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+.card:hover .cardnumber {
+  z-index: -1;
+}
+
+.cardnumber {
+  font-size: 180px;
+  font-weight: 900;
+  right: 100px;
+  bottom: 15px;
+  position: relative;
+  color: #313131;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.cardtitle {
+  font-size: 40px;
+  font-weight: 600;
+  margin-top: -350px;
+  margin-left: 150px;
+}
+
+.cardtitlenumber {
+  color: grey;
+}
+
+.brieflydescrp {
+  line-height: 29px;
+}
+
+.worksdescrp {
+  line-height: 29px;
+}
+
+.carddescrp {
+  margin-top: -25px;
+  margin-left: 150px;
 }
 
 i.fa {
   display: inline-block;
-  font-size: 20px;
-  color: black;
+  border-radius: 60px;
+  padding: 0.6em 0.7em;
+  font-size: 26px;
+  color: white;
+  background-color: rgba(128, 128, 128, 0.253);
 }
 
 .fa[first-child] {
@@ -62,6 +162,7 @@ i.fa {
 }
 
 .contentdiv {
+  margin-top: 220px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -70,7 +171,8 @@ i.fa {
 }
 
 .mailicon {
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   cursor: pointer;
 }
 
@@ -79,7 +181,8 @@ i.fa {
 }
 
 .githubicon {
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   cursor: pointer;
 }
 
@@ -88,36 +191,38 @@ i.fa {
 }
 
 .instagramicon {
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   cursor: pointer;
 }
 
 .instagramicon:hover {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #d6249f;
 }
 
 .twittericon {
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   cursor: pointer;
 }
 
 .twittericon:hover {
-  color: #1DA1F2;
+  color: #1da1f2;
 }
 
 .linkedinicon {
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   cursor: pointer;
 }
 
 .linkedinicon:hover {
-  color: #2867B2;
+  color: #2867b2;
 }
 
 .dribbbleicon {
-  transition: .2s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   cursor: pointer;
 }
 
@@ -125,9 +230,180 @@ i.fa {
   color: #ee66aa;
 }
 
+.iconarea {
+  margin-top: 30px;
+}
+
+.iconsdivfirstrow {
+  margin-bottom: 15px;
+  display: none;
+}
+
+.iconsdivsecondrow {
+  display: none;
+}
+
+.worksdiv {
+  margin-top: -21px;
+}
+
+.worksrow {
+  margin-bottom: -6px;
+}
+
+@media only screen and (max-width: 840px) {
+  .card {
+    width: 500px;
+    margin-bottom: -80px;
+  }
+  .cardtitle {
+    font-size: 30px;
+    margin-top: -285px;
+  }
+  .cardnumber {
+    font-size: 150px;
+    bottom: 0px;
+  }
+  .iconsdivfull {
+    display: none;
+  }
+  .iconsdivfirstrow,
+  .iconsdivsecondrow {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .card {
+    width: 450px;
+    height: 190px;
+    margin-bottom: -60px;
+  }
+  .cardtitle {
+    margin-left: 120px;
+  }
+  .carddescrp {
+    margin-top: -20px;
+    margin-left: 120px;
+  }
+  .contentdiv {
+    margin-top: 250px;
+  }
+  .cardnumber {
+    bottom: -14px;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .card {
+    width: 400px;
+    height: 220px;
+  }
+  .cardnumber {
+    bottom: -26px;
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .card {
+    width: 350px;
+  }
+  .cardnumber {
+    font-size: 120px;
+    bottom: -48px;
+  }
+  .cardtitle {
+    font-size: 25px;
+    margin-left: 80px;
+    margin-top: -230px;
+  }
+  .carddescrp {
+    margin-left: 80px;
+  }
+  .contentdiv {
+    margin-top: 200px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .card {
+    width: 300px;
+    height: 280px;
+  }
+  .cardnumber {
+    bottom: -75px;
+  }
+  .cardtitle {
+    margin-top: -215px;
+  }
+  .contentdiv {
+    margin-top: 220px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .card {
+    width: 280px;
+    height: 280px;
+  }
+  .cardnumber {
+    bottom: -75px;
+    right: 95px;
+  }
+  .contentdiv {
+    margin-top: 250px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .card {
+    width: 270px;
+    height: 300px;
+  }
+  .cardnumber {
+    bottom: -85px;
+    right: 90px;
+  }
+  .contentdiv {
+    margin-top: 250px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .card {
+    width: 250px;
+    height: 350px;
+  }
+  .cardnumber {
+    font-size: 100px;
+    bottom: -115px;
+    right: 70px;
+  }
+  .cardtitle {
+    margin-top: -180px;
+  }
+  .name {
+    font-size: 50px;
+  }
+  i.fa {
+    font-size: 21px;
+  }
+  .worksdescrp {
+    margin-top: 30px;
+  }
+  .worksdiv {
+    margin-top: -27px;
+  }
+}
+
+/* DISABLE THEMING
 @media (prefers-color-scheme: dark) {
   body {
     background-color: black;
+  }
+
+  .innerbody {
+    background-color: grey;
   }
 
   h1,
@@ -144,3 +420,5 @@ i.fa {
   }
 
 }
+*/
+/*# sourceMappingURL=style.css.map */
