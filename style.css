@@ -96,6 +96,46 @@ a {
   }
 }
 
+.titlearea {
+  margin-bottom: 100px;
+}
+
+.lifesub {
+  margin-top: -30px;
+}
+
+.bookcard {
+  width: 240px;
+  height: 350px;
+  background-color: rgba(128, 128, 128, 0.253);
+  border-radius: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-bottom: -100px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  margin: 60px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .bookcard:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+.bookimage {
+  height: 350px;
+}
+
+.lifecard {
+  text-decoration: none;
+}
+
 @media (hover: hover) and (pointer: fine) {
   .icon:hover {
     -webkit-transform: scale(1.2);
@@ -139,9 +179,18 @@ a {
   line-height: 29px;
 }
 
+.lifedescrp {
+  line-height: 29px;
+}
+
 .carddescrp {
   margin-top: -25px;
   margin-left: 150px;
+  text-decoration: none;
+}
+
+.currentreadingdesrp {
+  margin-top: -10px;
 }
 
 i.fa {
