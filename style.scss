@@ -116,6 +116,26 @@ a {
   }
 }
 
+.projectcard {
+  width: 300px;
+  height: 35px;
+  background-color: rgba(128, 128, 128, 0.253);
+  border-radius: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-top: 5px;
+  margin-bottom: -100px;
+  transition: transform 0.2s;
+  margin: 60px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .projectcard:hover {
+    transform: scale(1.1);
+  }
+}
+
 .bookimage {
   height: 350px;
 }
@@ -183,6 +203,10 @@ a {
    margin-top: -10px;
 }
 
+.currentprojectdescrp {
+  margin-top: -10px;
+}
+
 .bookamazonlink {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -213,7 +237,16 @@ i.fa {
 }
 
 .contentdiv {
-  margin-top: 220px;
+  margin-top: 350px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.lifecontentdiv {
+  margin-top: 400px;
   position: absolute;
   left: 50%;
   top: 50%;
