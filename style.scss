@@ -237,21 +237,19 @@ i.fa {
 }
 
 .contentdiv {
-  margin-top: 350px;
   position: absolute;
   left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  top: 300px;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
 }
 
 .lifecontentdiv {
-  margin-top: 400px;
   position: absolute;
   left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  top: 300px;
+  -webkit-transform: translate(-50%);
+  transform: translate(-50%);
 }
 
 .mailicon {
@@ -371,10 +369,6 @@ i.fa {
     margin-left: 120px;
   }
 
-  .contentdiv {
-    margin-top: 250px;
-  }
-
   .cardnumber {
     bottom: -14px;
   }
@@ -410,10 +404,6 @@ i.fa {
   .carddescrp {
     margin-left: 80px;
   }
-
-  .contentdiv {
-    margin-top: 200px;
-  }
 }
 
 @media only screen and (max-width: 575px) {
@@ -429,10 +419,6 @@ i.fa {
   .cardtitle {
     margin-top: -215px;
   }
-
-  .contentdiv {
-    margin-top: 220px;
-  }
 }
 
 @media only screen and (max-width: 530px) {
@@ -445,10 +431,6 @@ i.fa {
     bottom: -75px;
     right: 95px;
   }
-
-  .contentdiv {
-    margin-top: 250px;
-  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -460,10 +442,6 @@ i.fa {
   .cardnumber {
     bottom: -85px;
     right: 90px;
-  }
-
-  .contentdiv {
-    margin-top: 250px;
   }
 }
 
