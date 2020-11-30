@@ -105,8 +105,8 @@ a {
 }
 
 .bookcard {
-  width: 240px;
-  height: 380px;
+  width: 600px;
+  height: 352px;
   background-color: rgba(128, 128, 128, 0.253);
   border-radius: 16px;
   padding-left: 20px;
@@ -119,6 +119,7 @@ a {
   transition: transform 0.2s;
   transition: transform 0.2s, -webkit-transform 0.2s;
   margin: 60px;
+  text-align: left;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -126,6 +127,37 @@ a {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
+}
+
+.bookcardrow {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.bookcardblock {
+  width: 260px;
+  float: left;
+}
+
+.bookgenre {
+  font-size: 17px;
+  background-color: grey;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.booktitle {
+  font-size: 29px;
+  font-weight: 400;
+  margin-top: -5px;
+}
+
+.bookdescription {
+  font-size: 14px;
+  margin-top: -20px;
+  width: auto;
 }
 
 .projectcard {
@@ -154,6 +186,7 @@ a {
 
 .bookimage {
   height: 350px;
+  text-align: left;
 }
 
 .lifecard {
