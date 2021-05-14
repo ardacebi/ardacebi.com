@@ -1,33 +1,209 @@
+@font-face {
+  font-family: "Sequel";
+  src: url('/assets/fonts/sequel/1.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/sequel/1.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/sequel/1.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/sequel/1.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/assets/fonts/sequel/1.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sequel";
+  src: url('/assets/fonts/sequel/1_italic.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/sequel/1_italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/sequel/1_italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/sequel/1_italic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/assets/fonts/sequel/1_italic.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sequel";
+  src: url('/assets/fonts/sequel/2.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/sequel/2.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/sequel/2.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/sequel/2.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/assets/fonts/sequel/2.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sequel";
+  src: url('/assets/fonts/sequel/2_italic.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/sequel/2_italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/sequel/2_italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/sequel/2_italic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/assets/fonts/sequel/2_italic.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sequel";
+  src: url('/assets/fonts/sequel/3.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/sequel/3.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/sequel/3.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/sequel/3.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/assets/fonts/sequel/3.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sequel";
+  src: url('/assets/fonts/sequel/3_italic.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/sequel/3_italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/sequel/3_italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/sequel/3_italic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/assets/fonts/sequel/3_italic.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sequel";
+  src: url('/assets/fonts/sequel/4.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/sequel/4.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/sequel/4.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/sequel/4.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/assets/fonts/sequel/4.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sequel";
+  src: url('/assets/fonts/sequel/4_italic.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/sequel/4_italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/sequel/4_italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/sequel/4_italic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/assets/fonts/sequel/4_italic.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sequel";
+  src: url('/assets/fonts/sequel/5.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/sequel/5.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/sequel/5.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/sequel/5.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/assets/fonts/sequel/5.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sequel";
+  src: url('/assets/fonts/sequel/5_italic.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/sequel/5_italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/sequel/5_italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/sequel/5_italic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/assets/fonts/sequel/5_italic.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sequel";
+  src: url('/assets/fonts/sequel/6.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/sequel/6.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/sequel/6.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/sequel/6.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/assets/fonts/sequel/6.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sequel";
+  src: url('/assets/fonts/sequel/6_italic.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/sequel/6_italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/sequel/6_italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/sequel/6_italic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/assets/fonts/sequel/6_italic.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sequel";
+  src: url('/assets/fonts/sequel/7.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/sequel/7.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/sequel/7.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/sequel/7.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/assets/fonts/sequel/7.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sequel";
+  src: url('/assets/fonts/sequel/7_italic.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/sequel/7_italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/sequel/7_italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/sequel/7_italic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/assets/fonts/sequel/7_italic.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sequel";
+  src: url('/assets/fonts/sequel/8.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/sequel/8.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/sequel/8.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/sequel/8.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/assets/fonts/sequel/8.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Sequel";
+  src: url('/assets/fonts/sequel/8_italic.eot'); /* IE9 Compat Modes */
+  src: url('/assets/fonts/sequel/8_italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/sequel/8_italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/sequel/8_italic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/assets/fonts/sequel/8_italic.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+}
+
 h1,
 h2,
 h3,
 h4,
 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Sequel", sans-serif;
 }
 
-h1 {
-  font-weight: 600;
-}
-
-h2 {
-  font-weight: 400;
-}
-
-h3 {
-  font-weight: 400;
-}
-
-h4 {
-  font-weight: 400;
-}
-
-h5 {
-  font-weight: 400;
-}
-
-p {
-  font-weight: 400;
+html { 
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/bg/space/1.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 body {
@@ -63,6 +239,7 @@ a {
   font-size: 16px;
   margin-top: -20px;
   text-transform: uppercase;
+  font-weight: 500;
 }
 
 .cardlist {
@@ -72,13 +249,13 @@ a {
 
 .card {
   width: 600px;
-  height: 170px;
+  height: 250px;
   background-color: rgba(128, 128, 128, 0.253);
   border-radius: 16px;
   padding-left: 30px;
   padding-right: 20px;
   padding-bottom: 20px;
-  margin-bottom: -100px;
+  margin-bottom: -40px;
   transition: transform 0.2s;
 }
 
@@ -190,10 +367,10 @@ a {
 }
 
 .cardnumber {
-  font-size: 180px;
+  font-size: 90px;
   font-weight: 900;
   right: 100px;
-  bottom: 15px;
+  bottom: -40px;
   position: relative;
   color: rgb(49, 49, 49);
   -moz-user-select: none;
@@ -206,7 +383,7 @@ a {
 .cardtitle {
   font-size: 40px;
   font-weight: 600;
-  margin-top: -350px;
+  margin-top: -185px;
   margin-left: 150px;
 }
 
@@ -230,6 +407,8 @@ a {
   margin-top: -25px;
   margin-left: 150px;
   text-decoration: none;
+  font-weight: 400;
+  color: lightgrey;
 }
 
 .currentreadingdesrp {
