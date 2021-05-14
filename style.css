@@ -14,18 +14,6 @@ h2 {
   font-weight: 400;
 }
 
-h3 {
-  font-weight: 400;
-}
-
-h4 {
-  font-weight: 400;
-}
-
-h5 {
-  font-weight: 400;
-}
-
 p {
   font-weight: 400;
 }
@@ -48,10 +36,6 @@ h4,
 h5,
 p {
   color: white;
-}
-
-.h2 {
-  font-size: 16px;
 }
 
 a {
@@ -94,103 +78,6 @@ a {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
-}
-
-.titlearea {
-  margin-bottom: 100px;
-}
-
-.lifesub {
-  margin-top: -30px;
-}
-
-.bookcard {
-  width: 600px;
-  height: 352px;
-  background-color: rgba(128, 128, 128, 0.253);
-  border-radius: 16px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  margin-bottom: -100px;
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
-  margin: 60px;
-  text-align: left;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .bookcard:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-}
-
-.bookcardrow {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.bookcardblock {
-  width: 260px;
-  float: left;
-}
-
-.bookgenre {
-  font-size: 17px;
-  background-color: grey;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.booktitle {
-  font-size: 29px;
-  font-weight: 400;
-  margin-top: -5px;
-}
-
-.bookdescription {
-  font-size: 14px;
-  margin-top: -20px;
-  width: auto;
-}
-
-.projectcard {
-  width: 300px;
-  height: 35px;
-  background-color: rgba(128, 128, 128, 0.253);
-  border-radius: 16px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-top: 5px;
-  margin-bottom: -100px;
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
-  transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
-  margin: 60px;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .projectcard:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
-  }
-}
-
-.bookimage {
-  height: 350px;
-  text-align: left;
-}
-
-.lifecard {
-  text-decoration: none;
 }
 
 @media (hover: hover) and (pointer: fine) {
@@ -236,29 +123,10 @@ a {
   line-height: 29px;
 }
 
-.lifedescrp {
-  line-height: 29px;
-}
-
 .carddescrp {
   margin-top: -25px;
   margin-left: 150px;
   text-decoration: none;
-}
-
-.currentreadingdesrp {
-  margin-top: -10px;
-}
-
-.currentprojectdescrp {
-  margin-top: -10px;
-}
-
-.bookamazonlink {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-decoration: none;
-  font-size: 15px;
 }
 
 i.fa {
@@ -270,28 +138,12 @@ i.fa {
   background-color: rgba(128, 128, 128, 0.253);
 }
 
-.fa[first-child] {
-  margin-left: 0px;
-}
-
-.fa[last-child] {
-  margin-right: 0px;
-}
-
 .fa {
   margin-right: 15px;
   margin-left: 15px;
 }
 
 .contentdiv {
-  position: absolute;
-  left: 50%;
-  top: 300px;
-  -webkit-transform: translate(-50%);
-  transform: translate(-50%);
-}
-
-.lifecontentdiv {
   position: absolute;
   left: 50%;
   top: 300px;
@@ -509,30 +361,4 @@ i.fa {
     margin-top: -27px;
   }
 }
-
-/* DISABLE THEMING
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: black;
-  }
-
-  .innerbody {
-    background-color: grey;
-  }
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  p {
-    color: white;
-  }
-
-  i.fa {
-    color: white;
-  }
-
-}
-*/
 /*# sourceMappingURL=style.css.map */
