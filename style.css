@@ -19,14 +19,19 @@ p {
 }
 
 body {
-  background-color: black;
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/bg/bg_5_tp.png");
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100%;
 }
 
 h1,
@@ -89,6 +94,12 @@ a {
 
 .card:hover .cardnumber {
   z-index: -1;
+}
+
+.bg_tp {
+  width: 100%;
+  opacity: 20%;
+  position: fixed;
 }
 
 .cardnumber {
