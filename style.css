@@ -27,12 +27,8 @@ body {
   background-position: center;
   margin: 0;
   padding: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 h1,
@@ -45,7 +41,7 @@ p {
 }
 
 a {
-  color: #bcbcbc;
+  color: rgb(188, 188, 188);
 }
 
 .name {
@@ -73,26 +69,19 @@ a {
   padding-right: 20px;
   padding-bottom: 20px;
   margin-bottom: -100px;
-  -webkit-transition: -webkit-transform 0.2s;
-  transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
-  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1);
+    transform: scale(1.1);
   }
 }
-
 @media (hover: hover) and (pointer: fine) {
   .icon:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    transform: scale(1.2);
   }
 }
-
 .card:hover .cardnumber {
   z-index: -1;
 }
@@ -159,12 +148,10 @@ i.fa {
   position: absolute;
   left: 50%;
   top: 300px;
-  -webkit-transform: translate(-50%);
   transform: translate(-50%);
 }
 
 .mailicon {
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   cursor: pointer;
 }
@@ -174,7 +161,6 @@ i.fa {
 }
 
 .githubicon {
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   cursor: pointer;
 }
@@ -184,7 +170,6 @@ i.fa {
 }
 
 .instagramicon {
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   cursor: pointer;
 }
@@ -194,7 +179,6 @@ i.fa {
 }
 
 .twittericon {
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   cursor: pointer;
 }
@@ -204,7 +188,6 @@ i.fa {
 }
 
 .linkedinicon {
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   cursor: pointer;
 }
@@ -214,7 +197,6 @@ i.fa {
 }
 
 .dribbbleicon {
-  -webkit-transition: 0.2s;
   transition: 0.2s;
   cursor: pointer;
 }
@@ -261,11 +243,10 @@ i.fa {
     display: none;
   }
   .iconsdivfirstrow,
-  .iconsdivsecondrow {
+.iconsdivsecondrow {
     display: block;
   }
 }
-
 @media only screen and (max-width: 750px) {
   .card {
     width: 450px;
@@ -283,7 +264,6 @@ i.fa {
     bottom: -14px;
   }
 }
-
 @media only screen and (max-width: 690px) {
   .card {
     width: 400px;
@@ -293,7 +273,6 @@ i.fa {
     bottom: -26px;
   }
 }
-
 @media only screen and (max-width: 630px) {
   .card {
     width: 350px;
@@ -311,7 +290,6 @@ i.fa {
     margin-left: 80px;
   }
 }
-
 @media only screen and (max-width: 575px) {
   .card {
     width: 300px;
@@ -324,7 +302,6 @@ i.fa {
     margin-top: -215px;
   }
 }
-
 @media only screen and (max-width: 530px) {
   .card {
     width: 280px;
@@ -335,7 +312,6 @@ i.fa {
     right: 95px;
   }
 }
-
 @media only screen and (max-width: 480px) {
   .card {
     width: 270px;
@@ -346,7 +322,6 @@ i.fa {
     right: 90px;
   }
 }
-
 @media only screen and (max-width: 460px) {
   .card {
     width: 250px;
@@ -372,5 +347,4 @@ i.fa {
   .worksdiv {
     margin-top: -27px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
