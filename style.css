@@ -101,7 +101,6 @@ a {
   color: rgba(119, 119, 119, 0.677);
   -moz-user-select: none;
   -webkit-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 
@@ -243,7 +242,7 @@ i.fa {
     display: none;
   }
   .iconsdivfirstrow,
-.iconsdivsecondrow {
+  .iconsdivsecondrow {
     display: block;
   }
 }
