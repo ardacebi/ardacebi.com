@@ -1,3 +1,2 @@
 # ardacebi.com
-Personal website (hub)
- 
+Personal website (Nova)
