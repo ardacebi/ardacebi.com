@@ -57,13 +57,18 @@
 </head>
 
 <body>
-        <div class="contentdiv">
-
-                <center>
-                        <h1 class="name">Arda Çebi</h1>
-
-                </center>
-        </div>
+        <h1 onclick="goofy()" class="name">Arda Çebi</h1>
+        <p id="easteregg">Goofy ah</p>
 </body>
+<script>
+        goofyEl = document.getElementById("easteregg")
+        currentClicks = 0
 
+        function goofy() {
+                currentClicks++
+                if (currentClicks == 10) {
+                        goofyEl.style.display = "unset"
+                }
+        }
+</script>
 </html>
