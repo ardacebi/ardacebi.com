@@ -25,8 +25,8 @@
         <meta name="msapplication-TileColor" content="#000000">
         <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
-        <link rel="preload" href="style.css" as="style">
-        <link rel="stylesheet" href="style.css">
+        <link rel="preload" href="style.css?v=2" as="style">
+        <link rel="stylesheet" href="style.css?v=2">
         <meta name="description" content="Personal and portfolio website of Arda Cebi.">
         <meta property="og:description" content="Personal and portfolio website of Arda Cebi.">
         <meta property="og:site_name" content="Arda Çebi">
@@ -56,43 +56,45 @@
         <meta name="language" content="English">
 </head>
 
-<body><div class="content"><h1 class="name">Arda Çebi</h1><p id="easteregg">CEO of Databases</p></div></body>
-<script>
-        goofyEl = document.getElementById("easteregg")
-        contentEl = document.querySelector(".content")
-        currentClicks = 0
-        longText = "CEO of Relational algebra, SQL queries, ER diagrams, Normalizations, Transactions, Indexes, ACID, Keys"
+<body><div class="content"><h1 class="name">Arda Çebi</h1><p id="easteregg">CEO of Databases</p></div>
+<script data-cfasync="false">
+        (function () {
+                const goofyEl = document.getElementById("easteregg")
+                const contentEl = document.querySelector(".content")
+                const longText = "CEO of Relational algebra, SQL queries, ER diagrams, Normalizations, Transactions, Indexes, ACID, Keys"
+                let currentClicks = 0
 
-        function revealEasterEgg() {
-                goofyEl.classList.add("visible")
-                void goofyEl.offsetHeight
-                goofyEl.classList.add("animate-in")
-        }
-
-        function swapEasterEggText(text) {
-                goofyEl.classList.remove("animate-in")
-                goofyEl.classList.add("animate-out")
-                goofyEl.addEventListener("animationend", function onOut(e) {
-                        if (e.animationName !== "easteregg-out") return
-                        goofyEl.removeEventListener("animationend", onOut)
-                        goofyEl.textContent = text
-                        goofyEl.classList.remove("animate-out")
+                function revealEasterEgg() {
+                        goofyEl.classList.add("visible")
                         void goofyEl.offsetHeight
                         goofyEl.classList.add("animate-in")
-                })
-        }
-
-        function goofy() {
-                window.getSelection()?.removeAllRanges()
-                currentClicks++
-                if (currentClicks == 10) {
-                        revealEasterEgg()
-                } else if (currentClicks == 20) {
-                        swapEasterEggText(longText)
                 }
-        }
 
-        contentEl.addEventListener("mousedown", (e) => e.preventDefault())
-        contentEl.addEventListener("click", goofy)
-</script>
+                function swapEasterEggText(text) {
+                        goofyEl.classList.remove("animate-in")
+                        goofyEl.classList.add("animate-out")
+                        goofyEl.addEventListener("animationend", function onOut(e) {
+                                if (e.animationName !== "easteregg-out") return
+                                goofyEl.removeEventListener("animationend", onOut)
+                                goofyEl.textContent = text
+                                goofyEl.classList.remove("animate-out")
+                                void goofyEl.offsetHeight
+                                goofyEl.classList.add("animate-in")
+                        })
+                }
+
+                function goofy() {
+                        window.getSelection()?.removeAllRanges()
+                        currentClicks++
+                        if (currentClicks == 10) {
+                                revealEasterEgg()
+                        } else if (currentClicks == 20) {
+                                swapEasterEggText(longText)
+                        }
+                }
+
+                contentEl.addEventListener("mousedown", (e) => e.preventDefault())
+                contentEl.addEventListener("click", goofy)
+        })()
+</script></body>
 </html>
