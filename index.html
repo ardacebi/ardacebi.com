@@ -56,19 +56,43 @@
         <meta name="language" content="English">
 </head>
 
-<body>
-        <h1 onclick="goofy()" class="name">Arda Çebi</h1>
-        <p id="easteregg">Goofy ah</p>
-</body>
+<body><div class="content"><h1 class="name">Arda Çebi</h1><p id="easteregg">CEO of Databases</p></div></body>
 <script>
         goofyEl = document.getElementById("easteregg")
+        contentEl = document.querySelector(".content")
         currentClicks = 0
+        longText = "CEO of Relational algebra, SQL queries, ER diagrams, Normalizations, Transactions, Indexes, ACID, Keys"
+
+        function revealEasterEgg() {
+                goofyEl.classList.add("visible")
+                void goofyEl.offsetHeight
+                goofyEl.classList.add("animate-in")
+        }
+
+        function swapEasterEggText(text) {
+                goofyEl.classList.remove("animate-in")
+                goofyEl.classList.add("animate-out")
+                goofyEl.addEventListener("animationend", function onOut(e) {
+                        if (e.animationName !== "easteregg-out") return
+                        goofyEl.removeEventListener("animationend", onOut)
+                        goofyEl.textContent = text
+                        goofyEl.classList.remove("animate-out")
+                        void goofyEl.offsetHeight
+                        goofyEl.classList.add("animate-in")
+                })
+        }
 
         function goofy() {
+                window.getSelection()?.removeAllRanges()
                 currentClicks++
                 if (currentClicks == 10) {
-                        goofyEl.style.display = "unset"
+                        revealEasterEgg()
+                } else if (currentClicks == 20) {
+                        swapEasterEggText(longText)
                 }
         }
+
+        contentEl.addEventListener("mousedown", (e) => e.preventDefault())
+        contentEl.addEventListener("click", goofy)
 </script>
 </html>

@@ -15,6 +15,7 @@ body {
   align-items: center;
   flex-direction: column;
   background-color: black;
+  font-size: 0;
 }
 
 * {
@@ -28,10 +29,73 @@ body {
   font-size: 60px;
   font-weight: 700;
   color: white;
+  margin: 0;
+  outline: none;
+  caret-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-modify: read-only;
+}
+
+.content {
+  text-align: center;
+  font-size: 16px;
+  isolation: isolate;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 
 #easteregg {
   display: none;
   font-size: 20px;
   color: grey;
+  margin: 0;
+  max-width: min(90vw, 720px);
+  line-height: 1.5;
+}
+
+#easteregg.visible {
+  display: block;
+}
+
+#easteregg.animate-in {
+  animation: easteregg-in 0.42s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+#easteregg.animate-out {
+  animation: easteregg-out 0.18s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+@keyframes easteregg-in {
+  from {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes easteregg-out {
+  from {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateY(-6px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #easteregg.animate-in,
+  #easteregg.animate-out {
+    animation: none;
+  }
 }
