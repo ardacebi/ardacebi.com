@@ -1,0 +1,1 @@
+{"name":"ardacebi-website","private":true,"scripts":{"test":"node --test tests/*.test.mjs","coverage":"node --test tests/*.test.mjs"},"devDependencies":{"acorn":"8.15.0"},"engines":{"node":">=22"}}
