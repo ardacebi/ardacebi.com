@@ -1,0 +1,11 @@
+/* TEAM */
+Name: Arda Çebi
+Site: https://ardacebi.com
+Location: Bologna, Italy
+Email: ardacebi@me.com
+GitHub: https://github.com/ardacebi
+
+/* SITE */
+Standards: HTML, CSS, JS
+Fonts: Source Serif 4, Source Sans 3
+Language: English

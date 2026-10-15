@@ -1,0 +1,359 @@
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src:
+    url("../fonts/source-serif-4-latin.woff2") format("woff2") tech("variations"),
+    url("../fonts/source-serif-4-latin.woff2") format("woff2-variations"),
+    url("../fonts/source-serif-4-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Source Serif 4";
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src:
+    url("../fonts/source-serif-4-latin-ext.woff2") format("woff2") tech("variations"),
+    url("../fonts/source-serif-4-latin-ext.woff2") format("woff2-variations"),
+    url("../fonts/source-serif-4-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src:
+    url("../fonts/source-sans-3-latin.woff2") format("woff2") tech("variations"),
+    url("../fonts/source-sans-3-latin.woff2") format("woff2-variations"),
+    url("../fonts/source-sans-3-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src:
+    url("../fonts/source-sans-3-latin-ext.woff2") format("woff2") tech("variations"),
+    url("../fonts/source-sans-3-latin-ext.woff2") format("woff2-variations"),
+    url("../fonts/source-sans-3-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+:root {
+  color-scheme: light dark;
+  --paper: light-dark(#ffffff, #000000);
+  --ink: light-dark(#1a1916, #ece8e0);
+  --muted: light-dark(#555c65, #a39e94);
+  --line: light-dark(#e6e8eb, #2c2a26);
+  --line-hover: light-dark(#34383e, #b0b0b0);
+  --line-strong: light-dark(#a6adb7, #7a7a7a);
+  --focus: light-dark(#1a1916, #ece8e0);
+  --sans: "Source Sans 3", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --serif: "Source Serif 4", "Iowan Old Style", Palatino, "Palatino Linotype", serif;
+  background: #ffffff;
+  background: var(--paper);
+  color: #1a1916;
+  color: var(--ink);
+}
+
+html[data-theme="light"] {
+  color-scheme: light;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  hanging-punctuation: first last;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: clip;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: 1.0625rem;
+  font-weight: 430;
+  line-height: 1.6;
+  letter-spacing: -0.011em;
+  font-optical-sizing: auto;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+p,
+ul,
+dl,
+dd,
+dt {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--line-strong);
+  text-underline-offset: 0.18em;
+  text-decoration-skip-ink: auto;
+  transition: text-decoration-color 160ms ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:hover {
+  text-decoration-color: var(--line-hover);
+}
+
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 1px solid var(--focus);
+  outline-offset: 3px;
+}
+
+/* Safari still draws a focus ring on programmatic focus; keep it keyboard-only. */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+::selection {
+  background: light-dark(#dce4ee, #3a3a3a);
+  color: var(--ink);
+}
+
+.skip {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  z-index: 20;
+  padding: 0.4rem 0.65rem;
+  background: var(--paper);
+  transform: translateY(-200%);
+}
+
+.skip:focus {
+  transform: none;
+}
+
+.chrome {
+  position: fixed;
+  z-index: 10;
+  top: max(1.1rem, env(safe-area-inset-top, 0px));
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.8125rem;
+  font-weight: 450;
+  letter-spacing: 0.01em;
+  color: var(--muted);
+}
+
+.chrome a {
+  text-decoration: none;
+}
+
+.chrome a:hover {
+  color: var(--ink);
+}
+
+.back {
+  left: max(1.25rem, env(safe-area-inset-left, 0px));
+}
+
+.theme-toggle {
+  right: max(1.1rem, env(safe-area-inset-right, 0px));
+  width: 2.5rem;
+  height: 2.5rem;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: color-mix(in oklab, var(--paper) 88%, var(--ink) 4%);
+  color: var(--muted);
+  transition:
+    color 160ms ease,
+    border-color 160ms ease,
+    background-color 160ms ease;
+}
+
+.theme-toggle:hover {
+  color: var(--ink);
+  border-color: var(--line-strong);
+  background: var(--paper);
+}
+
+.theme-toggle:focus-visible {
+  outline-offset: 3px;
+}
+
+.theme-toggle [data-theme-icon] {
+  display: none;
+  grid-area: 1 / 1;
+}
+
+.theme-toggle[data-mode="light"] [data-theme-icon="light"],
+.theme-toggle[data-mode="dark"] [data-theme-icon="dark"] {
+  display: block;
+}
+
+.theme-toggle svg {
+  width: 1.05rem;
+  height: 1.05rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.theme-toggle .icon-auto-fill {
+  fill: currentColor;
+  stroke: none;
+}
+
+html[data-embed] .back {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .back {
+    left: max(1rem, env(safe-area-inset-left, 0px));
+  }
+
+  .theme-toggle {
+    right: max(1rem, env(safe-area-inset-right, 0px));
+  }
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.links li {
+  display: flex;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 0;
+  row-gap: 0.2rem;
+  color: var(--muted);
+  font-size: 0.8125rem;
+  font-weight: 450;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.01em;
+}
+
+.meta time::before {
+  content: "·";
+  margin: 0 0.85rem;
+}
+
+.clock {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+@media print {
+  .chrome {
+    display: none;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+/* Before JavaScript runs, the icon reflects the system appearance. */
+.theme-toggle[data-mode="system"] [data-theme-icon="light"] { display: block; }
+@media (prefers-color-scheme: dark) {
+  .theme-toggle[data-mode="system"] [data-theme-icon="light"] { display: none; }
+  .theme-toggle[data-mode="system"] [data-theme-icon="dark"] { display: block; }
+}
+.clock-digits { display: inline-flex; align-items: baseline; }
+.clock-seconds {
+  display: inline-grid;
+  grid-template-columns: 0fr;
+  opacity: 0;
+  transform: translateY(0.2em);
+  transition: grid-template-columns 600ms cubic-bezier(.22,1,.36,1), opacity 400ms ease, transform 600ms cubic-bezier(.22,1,.36,1);
+}
+.clock-seconds > span { overflow: hidden; min-width: 0; white-space: nowrap; }
+.clock:hover .clock-seconds, .clock:focus-visible .clock-seconds {
+  grid-template-columns: 1fr;
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .clock-seconds { transition: none; }
+}

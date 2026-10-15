@@ -1,0 +1,59 @@
+# Arda Çebi
+
+> Computer science student at the University of Bologna. Designs and builds software. Co-founder of Designble. Based in Bologna, Italy.
+
+A plain-text summary of the public website, last updated 2026-10-15.
+
+## Identity
+
+- Name: Arda Çebi
+- Also known as: Arda Cebi
+- Occupation: Computer science student; software designer and builder
+- Affiliation: University of Bologna (Alma Mater Studiorum – Università di Bologna)
+- Studio: Designble (co-founder, 2019)
+- Location: Bologna, Italy
+- Website: https://ardacebi.com
+- Languages: English (this site)
+
+## Now
+
+- Studying computer science at the University of Bologna
+
+## Links
+
+- Website: https://ardacebi.com
+- Email: ardacebi@me.com
+- GitHub: https://github.com/ardacebi
+- LinkedIn: https://www.linkedin.com/in/ardacebi
+- X: https://x.com/ardacebie
+- Designble: https://designble.net
+- University of Bologna: https://www.unibo.it/en
+
+## Background
+
+- Grew up in Istanbul.
+- Has been making software since age twelve.
+- Open to opportunities.
+
+<!-- projects:start -->
+## Designble projects
+
+- [Aldemir & Çolakoğlu](https://aldemircolakoglu.av.tr/) (2025, Website): I wanted a law firm’s website to feel considered and approachable. Clear information, restrained typography, and fluid transitions bring a modern rhythm to a traditionally formal setting. My guiding principle was minimalism: give every detail a purpose and every visitor a clear path.
+- [Özel Evrim Okulları](https://evrim.k12.tr/) (2023, Web design and branding): I studied here from 2016 to 2018, and in 2023 I came back to redesign the site and the brand. The palette comes from the logo. Colour gives the pages their energy, and a clear structure keeps information easy to find.
+
+## Design work
+
+- [ardacebi.com](https://ardacebi.com/) (2026, Web design and development): I wanted this page to feel like a quiet introduction, with more to discover if you stay. I built it around typography, small interactions, and a changing sky, letting the work unfold inside the words.
+- [Telegram macOS](https://dribbble.com/shots/12676856-Telegram-macOS-Design-Concept) (2020, Design concept): A macOS client concept for Telegram.
+- [KiCad Suite](https://dribbble.com/shots/12575384-KiCad-Suite-macOS-Big-Sur-Icon-Concept) (2020, Icon concept): Big Sur icon concepts for the KiCad suite.
+- [iTerm2](https://dribbble.com/shots/12265146-iTerm2-macOS-Big-Sur-Icon-Concept) (2020, Icon concept): A Big Sur icon concept for iTerm2.
+- [Decury](https://dribbble.com/shots/10812487-Decury-Brand-Design-Identity-Guidelines) (2020, Brand guidelines): Brand identity and guidelines for Decury.
+
+## Software
+
+- [Selfie](https://github.com/ardacebi/selfie-tw) (2025, University project): A place to bring a student’s day together: notes, calendars, tasks, and focused study. I built Selfie with a classmate at the University of Bologna, working across the interface and contributing to the backend. I built the homepage, daily calendar, Pomodoro timer, notifications, and light and dark themes, and helped shape the app’s shared styling. Technologies: React, Node.js, Express, MongoDB.
+- [GrokBar](https://github.com/ardacebi/grokbar) (2025, macOS app): Grok, a little closer to hand. I built a macOS menu bar app that brings grok.com into a sliding panel, with particular attention to how it opens, moves, and fits into the desktop.
+- [Arculator](https://github.com/ardacebi/arculator) (2020, Terminal tool): A calculator and unit converter for the terminal, written in C++. An early exploration of making everyday tools work through a simple command-line interface, from arithmetic to length, volume, and temperature conversions.
+- [fasttake](https://github.com/ardacebi/fasttake) (2020, Mobile app): A Flutter app built around the moment an idea arrives. Save a note first, organise it with tags later. I explored how little an interface could ask of you while still making your thoughts easy to return to.
+- My first apps (2018, Mobile experiments): At twelve, I started turning curiosity into apps: a browser, a translator, and a random number generator. Built with App Inventor, they were my first experiments in connecting interface decisions to working logic. Small tools, lots of trial and error, and the beginning of a habit I still have: learning by making something I can use. Projects: [Coby Browser](https://github.com/ardacebi/coby-browser), [Tras Tras Translator](https://github.com/ardacebi/tras-tras-translator), [Randomer](https://github.com/ardacebi/randomer).
+<!-- projects:end -->

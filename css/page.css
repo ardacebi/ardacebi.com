@@ -1,0 +1,319 @@
+.page {
+  width: min(36rem, calc(100% - 2.5rem));
+  margin: 0 auto;
+  padding: 22vh 0 4.5rem;
+}
+
+.page header {
+  margin-bottom: 1.75rem;
+}
+
+.page h1 {
+  position: relative;
+  font-family: var(--serif);
+  font-size: clamp(2.5rem, 7vw, 3.32rem);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  font-optical-sizing: auto;
+
+  width: fit-content;
+  max-width: 100%;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: default;
+}
+
+.vitals {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2.75rem;
+}
+
+.contact {
+  min-width: 0;
+}
+
+.email {
+  display: inline;
+  padding: 0;
+  font: inherit;
+  font-weight: 460;
+  letter-spacing: -0.012em;
+  color: inherit;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: var(--line-strong);
+  text-underline-offset: 0.18em;
+  text-decoration-skip-ink: auto;
+  overflow-wrap: anywhere;
+  transition: text-decoration-color 160ms ease;
+  cursor: pointer;
+}
+
+.email:hover,
+.email[aria-expanded="true"] {
+  text-decoration-color: var(--line-hover);
+}
+
+.vitals-rest {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.links {
+  color: var(--muted);
+}
+
+.social-link {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 2.5rem;
+  height: 2.5rem;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: color-mix(in oklab, var(--paper) 88%, var(--ink) 4%);
+  overflow: visible;
+  transition:
+    color 160ms ease,
+    border-color 160ms ease,
+    background-color 160ms ease;
+}
+
+.social-link:hover,
+.social-link:focus-visible {
+  color: var(--ink);
+  border-color: var(--line-strong);
+  background: var(--paper);
+}
+
+.social-icon {
+  width: 1.05rem;
+  height: 1.05rem;
+  max-width: none;
+  overflow: visible;
+  fill: currentColor;
+  pointer-events: none;
+}
+
+.social-icon-github {
+  width: 1.08rem;
+  height: 1.08rem;
+}
+
+.social-icon-linkedin {
+  width: 1.05rem;
+  height: 1.05rem;
+}
+
+.social-icon-x {
+  width: 1rem;
+  height: 1rem;
+}
+
+.x-glitch {
+  --x-glitch-a: color-mix(in oklab, currentColor 28%, #ff4d5a);
+  --x-glitch-b: color-mix(in oklab, currentColor 28%, #3ad0ff);
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 1rem;
+  height: 1rem;
+  overflow: visible;
+}
+
+.x-glitch > .social-icon {
+  grid-area: 1 / 1;
+  transform-origin: 50% 50%;
+}
+
+.x-glitch-ghost {
+  opacity: 0;
+}
+
+.x-glitch-ghost-a {
+  fill: var(--x-glitch-a);
+}
+
+.x-glitch-ghost-b {
+  fill: var(--x-glitch-b);
+}
+
+.x-link:hover .x-glitch-mark,
+.x-link:focus-visible .x-glitch-mark {
+  animation: x-glitch 1.05s steps(1, end) infinite;
+}
+
+.x-link:hover .x-glitch-ghost-a,
+.x-link:focus-visible .x-glitch-ghost-a {
+  animation: x-glitch-ghost-a 1.05s steps(1, end) infinite;
+}
+
+.x-link:hover .x-glitch-ghost-b,
+.x-link:focus-visible .x-glitch-ghost-b {
+  animation: x-glitch-ghost-b 1.05s steps(1, end) infinite;
+}
+
+@keyframes x-glitch {
+  0%,
+  6%,
+  18%,
+  36%,
+  54%,
+  70%,
+  86%,
+  100% {
+    transform: none;
+    filter: none;
+    clip-path: none;
+    opacity: 1;
+  }
+  7%,
+  16% {
+    transform: translate3d(48%, -22%, 0) skewX(-16deg);
+    filter: drop-shadow(-7px 0 0 var(--x-glitch-a))
+      drop-shadow(8px 3px 0 var(--x-glitch-b));
+    clip-path: polygon(0 0, 100% 0, 100% 46%, 0 38%);
+    opacity: 0.96;
+  }
+  37%,
+  46% {
+    transform: translate3d(-52%, 24%, 0) skewX(18deg);
+    filter: drop-shadow(8px -2px 0 var(--x-glitch-b))
+      drop-shadow(-7px 3px 0 var(--x-glitch-a));
+    clip-path: polygon(0 42%, 100% 34%, 100% 100%, 0 100%);
+    opacity: 0.92;
+  }
+  71%,
+  78% {
+    transform: translate3d(36%, 28%, 0) skewX(-12deg);
+    filter: drop-shadow(-9px 2px 0 var(--x-glitch-a))
+      drop-shadow(6px -4px 0 var(--x-glitch-b));
+    clip-path: polygon(0 16%, 100% 28%, 100% 64%, 0 52%);
+    opacity: 0.84;
+  }
+  87%,
+  90% {
+    transform: translate3d(-32%, -20%, 0) skewX(12deg);
+    filter: drop-shadow(7px 0 0 var(--x-glitch-b));
+    opacity: 0.7;
+  }
+}
+
+@keyframes x-glitch-ghost-a {
+  0%,
+  6%,
+  18%,
+  36%,
+  54%,
+  70%,
+  86%,
+  100% {
+    opacity: 0;
+    transform: none;
+    clip-path: none;
+  }
+  7%,
+  16% {
+    opacity: 1;
+    transform: translate3d(-58%, 28%, 0) skewX(12deg);
+    clip-path: polygon(0 34%, 100% 42%, 100% 100%, 0 100%);
+  }
+  37%,
+  46% {
+    opacity: 1;
+    transform: translate3d(62%, -30%, 0) skewX(-14deg);
+    clip-path: polygon(0 0, 100% 0, 100% 40%, 0 48%);
+  }
+  71%,
+  78% {
+    opacity: 1;
+    transform: translate3d(-50%, -32%, 0);
+    clip-path: polygon(0 0, 100% 0, 100% 26%, 0 14%);
+  }
+  87%,
+  90% {
+    opacity: 0.85;
+    transform: translate3d(46%, 26%, 0);
+    clip-path: inset(52% 0 0 0);
+  }
+}
+
+@keyframes x-glitch-ghost-b {
+  0%,
+  6%,
+  18%,
+  36%,
+  54%,
+  70%,
+  86%,
+  100% {
+    opacity: 0;
+    transform: none;
+    clip-path: none;
+  }
+  7%,
+  16% {
+    opacity: 0.95;
+    transform: translate3d(64%, -18%, 0);
+    clip-path: inset(18% 0 32% 0);
+  }
+  37%,
+  46% {
+    opacity: 0.95;
+    transform: translate3d(-54%, 32%, 0) skewX(8deg);
+    clip-path: inset(0 0 48% 0);
+  }
+  71%,
+  78% {
+    opacity: 1;
+    transform: translate3d(56%, 14%, 0) skewX(12deg);
+    clip-path: polygon(0 54%, 100% 62%, 100% 100%, 0 100%);
+  }
+  87%,
+  90% {
+    opacity: 0.88;
+    transform: translate3d(-48%, -16%, 0);
+    clip-path: inset(0 0 44% 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .x-link:hover .x-glitch-mark,
+  .x-link:focus-visible .x-glitch-mark,
+  .x-link:hover .x-glitch-ghost-a,
+  .x-link:focus-visible .x-glitch-ghost-a,
+  .x-link:hover .x-glitch-ghost-b,
+  .x-link:focus-visible .x-glitch-ghost-b {
+    animation: none;
+  }
+
+  .x-glitch-ghost {
+    display: none;
+  }
+}
+
+.lede {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+  text-wrap: pretty;
+}
+
+.meta .glimpse:not(a) {
+  color: inherit;
+}
+
+@media (max-width: 640px) {
+  .page {
+    width: min(36rem, calc(100% - 2rem));
+    padding-top: 5.75rem;
+  }
+}
+
+.email, .email:hover, .email[aria-expanded="true"] { text-decoration: none; }

@@ -1,100 +1,775 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Arda Çebi</title>
+    <meta
+      name="description"
+      content="Arda Çebi is a computer science student at the University of Bologna. He designs and builds software, and co-founded Designble. Raised in Istanbul. Based in Bologna, Italy."
+    />
+    <meta name="author" content="Arda Çebi" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://ardacebi.com/" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Arda Çebi" />
+    <meta property="og:title" content="Arda Çebi" />
+    <meta
+      property="og:description"
+      content="Computer science student at the University of Bologna. Designs and builds software. Co-founder of Designble. Raised in Istanbul. Based in Bologna, Italy."
+    />
+    <meta property="og:url" content="https://ardacebi.com/" />
+    <meta property="profile:first_name" content="Arda" />
+    <meta property="profile:last_name" content="Çebi" />
+    <meta property="og:image" content="https://ardacebi.com/images/social-card.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Arda Çebi — Software, interfaces, and the systems behind them." />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://ardacebi.com/images/social-card.png" />
+    <meta name="twitter:image:alt" content="Arda Çebi — Software, interfaces, and the systems behind them." />
+    <meta name="twitter:title" content="Arda Çebi" />
+    <meta
+      name="twitter:description"
+      content="Computer science student at the University of Bologna. Designs and builds software. Co-founder of Designble. Raised in Istanbul."
+    />
+    <meta name="twitter:site" content="@ardacebie" />
+    <meta
+      name="theme-color"
+      content="#ffffff"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#000000"
+      media="(prefers-color-scheme: dark)"
+    />
+    <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48" />
+    <link rel="icon" href="favicon-96.png" type="image/png" sizes="96x96" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180" />
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="Site facts and projects" />
+    <link rel="me" href="mailto:ardacebi@me.com" />
+    <link rel="me" href="https://github.com/ardacebi" />
+    <link rel="me" href="https://www.linkedin.com/in/ardacebi" />
+    <link rel="me" href="https://x.com/ardacebie" />
+    <link rel="me" href="https://dribbble.com/ardacebi" />
+    <link
+      rel="preload"
+      href="fonts/source-sans-3-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="preload" href="fonts/source-serif-4-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="css/base.css?v=source-serif-20261015" />
+    <link rel="stylesheet" href="css/page.css?v=garamond-size2-20260908" />
+    <link rel="stylesheet" href="css/sky.css?v=cinema-20260908" />
+    <link rel="stylesheet" href="css/popover.css?v=cinema-20260908" />
+    <link rel="stylesheet" href="css/expand.css?v=preview-fixed-20261015" />
+    <link rel="stylesheet" href="css/glimpse.css?v=cinema-20260908" />
+    <noscript><style>
+      .expand { grid-template-rows: 1fr; opacity: 1; filter: none; transform: none; pointer-events: auto; }
+      .expand-veil, .theme-toggle { display: none; }
+      .work-trigger { cursor: default; }
+    </style></noscript>
 
-<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Arda Çebi</title>
-        <link rel="preload" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css" as="style">
-        <link rel="preload" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css" as="style"
-                onload="this.onload=null;this.rel='stylesheet'"><noscript>
-                <link rel="stylesheet" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-        </noscript>
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-        <meta name="msapplication-navbutton-color" content="#ffffff">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
-                rel="stylesheet">
-        <meta name="apple-mobile-web-app-status-bar-style" content="#ffffff">
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-        <link rel="manifest" href="/assets/favicons/site.webmanifest">
-        <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#000000">
-        <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
-        <meta name="msapplication-TileColor" content="#000000">
-        <meta name="msapplication-config" content="/assets/favicons/browserconfig.xml">
-        <meta name="theme-color" content="#ffffff">
-        <link rel="preload" href="style.css?v=2" as="style">
-        <link rel="stylesheet" href="style.css?v=2">
-        <meta name="description" content="Personal and portfolio website of Arda Cebi.">
-        <meta property="og:description" content="Personal and portfolio website of Arda Cebi.">
-        <meta property="og:site_name" content="Arda Çebi">
-        <meta property="og:title" content="Arda Çebi">
-        <link rel="canonical" href="https://ardacebi.com/" />
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HT3XXHTMJC"></script>
-        <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag() { dataLayer.push(arguments); }
-                gtag('js', new Date());
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://ardacebi.com/#website",
+            "url": "https://ardacebi.com/",
+            "name": "Arda Çebi",
+            "inLanguage": "en",
+            "publisher": { "@id": "https://ardacebi.com/#person" }
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://ardacebi.com/#page",
+            "url": "https://ardacebi.com/",
+            "name": "Arda Çebi",
+            "isPartOf": { "@id": "https://ardacebi.com/#website" },
+            "about": { "@id": "https://ardacebi.com/#person" },
+            "mainEntity": { "@id": "https://ardacebi.com/#person" },
+            "inLanguage": "en"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://ardacebi.com/#person",
+            "name": "Arda Çebi",
+            "alternateName": ["Arda Cebi"],
+            "url": "https://ardacebi.com/",
+            "email": "ardacebi@me.com",
+            "image": "https://github.com/ardacebi.png",
+            "jobTitle": "Computer Science student",
+            "description": "Computer science student at the University of Bologna. Designs and builds software. Co-founder of Designble. Raised in Istanbul. Based in Bologna, Italy.",
+            "knowsAbout": [
+              "computer science",
+              "software design",
+              "web design",
+              "interface design"
+            ],
+            "affiliation": [
+              {
+                "@type": "CollegeOrUniversity",
+                "name": "University of Bologna",
+                "alternateName": "Alma Mater Studiorum – Università di Bologna",
+                "url": "https://www.unibo.it/en"
+              },
+              {
+                "@type": "Organization",
+                "name": "Designble",
+                "url": "https://designble.net/"
+              }
+            ],
+            "homeLocation": {
+              "@type": "Place",
+              "name": "Bologna, Italy",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Bologna",
+                "addressCountry": "IT"
+              }
+            },
+            "sameAs": [
+              "https://github.com/ardacebi",
+              "https://www.linkedin.com/in/ardacebi",
+              "https://x.com/ardacebie",
+              "https://dribbble.com/ardacebi"
+            ]
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+    <button
+      class="chrome theme-toggle"
+      type="button"
+      data-theme-toggle
+      data-mode="system"
+      aria-label="Switch color theme"
+    >
+      <svg data-theme-icon="light" viewBox="0 0 16 16" aria-hidden="true">
+        <circle cx="8" cy="8" r="3"></circle>
+        <path
+          d="M8 2v1.15M8 12.85V14M2 8h1.15M12.85 8H14M3.76 3.76l.81.81M11.43 11.43l.81.81M3.76 12.24l.81-.81M11.43 4.57l.81-.81"
+        ></path>
+      </svg>
+      <svg data-theme-icon="dark" viewBox="0 0 16 16" aria-hidden="true">
+        <path
+          d="M9.35 3.15A5.1 5.1 0 1 0 12.7 10.4 4.15 4.15 0 0 1 9.35 3.15Z"
+        ></path>
+      </svg>
+    </button>
+    <main id="content" class="page">
+      <header>
+        <h1 data-egg-trigger>Arda Çebi</h1>
+      </header>
+      <div class="vitals">
+        <p class="contact">
+          <a
+            class="email"
+            href="mailto:ardacebi@me.com"
+            data-email-trigger
+            aria-haspopup="dialog"
+            aria-controls="site-popover"
+            aria-expanded="false"
+            >ardacebi@me.com</a
+          >
+        </p>
+        <div class="vitals-rest">
+          <ul class="links">
+            <li>
+              <a
+                class="social-link x-link"
+                rel="me noopener noreferrer"
+                href="https://x.com/ardacebie"
+                target="_blank"
+                aria-label="X"
+              >
+                <span class="x-glitch" aria-hidden="true">
+                  <svg class="social-icon social-icon-x x-glitch-ghost x-glitch-ghost-a" viewBox="0 0 24 24">
+                    <path
+                      d="M18.901 1.153h3.68l-8.04 9.19L24 22.847h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
+                    ></path>
+                  </svg>
+                  <svg class="social-icon social-icon-x x-glitch-ghost x-glitch-ghost-b" viewBox="0 0 24 24">
+                    <path
+                      d="M18.901 1.153h3.68l-8.04 9.19L24 22.847h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
+                    ></path>
+                  </svg>
+                  <svg class="social-icon social-icon-x x-glitch-mark" viewBox="0 0 24 24">
+                    <path
+                      d="M18.901 1.153h3.68l-8.04 9.19L24 22.847h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
+                    ></path>
+                  </svg>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-link"
+                rel="me noopener noreferrer"
+                href="https://github.com/ardacebi"
+                target="_blank"
+                aria-label="GitHub"
+              >
+                <svg class="social-icon social-icon-github" viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="social-link"
+                rel="me noopener noreferrer"
+                href="https://www.linkedin.com/in/ardacebi"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <svg class="social-icon social-icon-linkedin" viewBox="3.05 3.05 17.6 17.65" aria-hidden="true">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z"
+                  ></path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <p class="meta">
+            <span class="clock" tabindex="0" aria-label="Current time in Bologna; focus to show seconds"
+              ><span class="clock-digits"><span data-clock-time></span><span class="clock-seconds" aria-hidden="true"><span data-clock-seconds></span></span></span> in
+              <span class="glimpse" data-glimpse="bologna">Bologna</span></span
+            >
+          </p>
+        </div>
+      </div>
+      <div class="lede">
+        <div class="lede-expandable">
+          <p>
+            I grew up in
+            <span class="glimpse" data-glimpse="istanbul">Istanbul</span>. I
+            study
+            <span class="glimpse" data-glimpse="computer-science"
+              >computer science</span
+            >
+            at the
+            <a
+              class="glimpse"
+              data-glimpse="unibo"
+              href="https://www.unibo.it/en"
+              target="_blank"
+              rel="noopener noreferrer"
+              >University of Bologna</a
+            >, and have been making
+            software
+            since I was twelve.
+          </p>
+        </div>
+        <div class="lede-expandable">
+          <p>
+            I design and build
+            <button
+              class="expand-trigger"
+              type="button"
+              data-expand-trigger="software"
+              aria-expanded="false"
+              aria-controls="expand-software"
+            >
+              software</button
+            >, interfaces, sites, and the systems behind them. I co-founded
+            <button
+              class="expand-trigger"
+              type="button"
+              data-expand-trigger="designble"
+              data-glimpse="designble"
+              aria-expanded="false"
+              aria-controls="expand-designble"
+            >
+              Designble
+            </button>
+            in 2019, and share
+            <button
+              class="expand-trigger"
+              type="button"
+              data-expand-trigger="dribbble"
+              aria-expanded="false"
+              aria-controls="expand-dribbble"
+              aria-label="Design work"
+            >
+              design</button
+            >
+            work. I am open to opportunities.
+          </p>
+          <div
+            class="expand"
+            id="expand-software"
+            data-expand-panel="software"
+          >
+            <div class="expand-clip">
+              <div class="expand-stack">
+                <div class="expand-body" data-works-root="software"><!-- works:software:start -->
+    <ul class="works-list">
 
-                gtag('config', 'G-HT3XXHTMJC');
-        </script>
-        <meta name="robots" content="index, follow">
-        <meta name="google" content="notranslate">
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:image" content="/assets/bg/preview.png">
-        <!--DESIGN IMAGE-->
-        <meta http-equiv="cache-control" content="Private" />
-        <meta http-equiv="Expires" content="600" />
-        <meta property="og:image:type" content="image/png">
-        <meta property="og:image:width" content="3200">
-        <meta property="og:image:height" content="1672">
-        <meta property="og:url" content="https://ardacebi.com">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta name="language" content="English">
-</head>
+        <li class="work" data-work="selfie" style="--work-i: 0">
+          <button
+            class="work-trigger"
+            type="button"
+            data-work-trigger="selfie"
+            aria-expanded="false"
+            aria-controls="work-software-selfie"
+          >
+            <span class="work-title">Selfie</span>
+            <span class="work-meta">2025 · University project</span>
+          </button>
+          <div class="expand work-detail" id="work-software-selfie" data-work-panel="selfie">
+            <div class="expand-clip">
+              <div class="expand-stack">
+                <div class="expand-body work-body">
 
-<body><div class="content"><h1 class="name">Arda Çebi</h1><p id="easteregg">CEO of Computer Networks</p></div>
-<script data-cfasync="false">
-        (function () {
-                const goofyEl = document.getElementById("easteregg")
-                const contentEl = document.querySelector(".content")
-                const longText = "CEO of VLSM Subnetting, FLSM, Symmetric Asymmetric cryptography, Security protocols, DHCP, MAC table, TCP/UDP, NAT, Socket programming"
-                let currentClicks = 0
+                  <p>A place to bring a student’s day together: notes, calendars, tasks, and focused study. I built Selfie with a classmate at the University of Bologna, working across the interface and contributing to the backend.</p>
+                  <p class="work-contribution">I built the homepage, daily calendar, Pomodoro timer, notifications, and light and dark themes, and helped shape the app’s shared styling.</p>
+                  <p class="work-technologies" aria-label="Technologies">React <span aria-hidden="true">·</span> Node.js <span aria-hidden="true">·</span> Express <span aria-hidden="true">·</span> MongoDB</p>
 
-                function revealEasterEgg() {
-                        goofyEl.classList.add("visible")
-                        void goofyEl.offsetHeight
-                        goofyEl.classList.add("animate-in")
-                }
+                  <p class="work-link"><a href="https://github.com/ardacebi/selfie-tw" target="_blank" rel="noopener noreferrer">View on GitHub</a></p>
+                </div>
+                <div class="expand-veil" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="work" data-work="grokbar" style="--work-i: 1">
+          <button
+            class="work-trigger"
+            type="button"
+            data-work-trigger="grokbar"
+            aria-expanded="false"
+            aria-controls="work-software-grokbar"
+          >
+            <span class="work-title">GrokBar</span>
+            <span class="work-meta">2025 · macOS app</span>
+          </button>
+          <div class="expand work-detail" id="work-software-grokbar" data-work-panel="grokbar">
+            <div class="expand-clip">
+              <div class="expand-stack">
+                <div class="expand-body work-body">
 
-                function swapEasterEggText(text) {
-                        goofyEl.classList.remove("animate-in")
-                        goofyEl.classList.add("animate-out")
-                        goofyEl.addEventListener("animationend", function onOut(e) {
-                                if (e.animationName !== "easteregg-out") return
-                                goofyEl.removeEventListener("animationend", onOut)
-                                goofyEl.textContent = text
-                                goofyEl.classList.remove("animate-out")
-                                void goofyEl.offsetHeight
-                                goofyEl.classList.add("animate-in")
-                        })
-                }
+                  <p>Grok, a little closer to hand. I built a macOS menu bar app that brings grok.com into a sliding panel, with particular attention to how it opens, moves, and fits into the desktop.</p>
 
-                function goofy() {
-                        window.getSelection()?.removeAllRanges()
-                        currentClicks++
-                        if (currentClicks == 10) {
-                                revealEasterEgg()
-                        } else if (currentClicks == 20) {
-                                swapEasterEggText(longText)
-                        }
-                }
 
-                contentEl.addEventListener("mousedown", (e) => e.preventDefault())
-                contentEl.addEventListener("click", goofy)
-        })()
-</script></body>
+
+                  <p class="work-link"><a href="https://github.com/ardacebi/grokbar" target="_blank" rel="noopener noreferrer">View on GitHub</a></p>
+                </div>
+                <div class="expand-veil" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="work" data-work="arculator" style="--work-i: 2">
+          <button
+            class="work-trigger"
+            type="button"
+            data-work-trigger="arculator"
+            aria-expanded="false"
+            aria-controls="work-software-arculator"
+          >
+            <span class="work-title">Arculator</span>
+            <span class="work-meta">2020 · Terminal tool</span>
+          </button>
+          <div class="expand work-detail" id="work-software-arculator" data-work-panel="arculator">
+            <div class="expand-clip">
+              <div class="expand-stack">
+                <div class="expand-body work-body">
+
+                  <p>A calculator and unit converter for the terminal, written in C++. An early exploration of making everyday tools work through a simple command-line interface, from arithmetic to length, volume, and temperature conversions.</p>
+
+
+
+                  <p class="work-link"><a href="https://github.com/ardacebi/arculator" target="_blank" rel="noopener noreferrer">View on GitHub</a></p>
+                </div>
+                <div class="expand-veil" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="work" data-work="fasttake" style="--work-i: 3">
+          <button
+            class="work-trigger"
+            type="button"
+            data-work-trigger="fasttake"
+            aria-expanded="false"
+            aria-controls="work-software-fasttake"
+          >
+            <span class="work-title">fasttake</span>
+            <span class="work-meta">2020 · Mobile app</span>
+          </button>
+          <div class="expand work-detail" id="work-software-fasttake" data-work-panel="fasttake">
+            <div class="expand-clip">
+              <div class="expand-stack">
+                <div class="expand-body work-body">
+
+                  <p>A Flutter app built around the moment an idea arrives. Save a note first, organise it with tags later. I explored how little an interface could ask of you while still making your thoughts easy to return to.</p>
+
+
+
+                  <p class="work-link"><a href="https://github.com/ardacebi/fasttake" target="_blank" rel="noopener noreferrer">View on GitHub</a></p>
+                </div>
+                <div class="expand-veil" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="work" data-work="first-apps" style="--work-i: 4">
+          <button
+            class="work-trigger"
+            type="button"
+            data-work-trigger="first-apps"
+            aria-expanded="false"
+            aria-controls="work-software-first-apps"
+          >
+            <span class="work-title">My first apps</span>
+            <span class="work-meta">2018 · Mobile experiments</span>
+          </button>
+          <div class="expand work-detail" id="work-software-first-apps" data-work-panel="first-apps">
+            <div class="expand-clip">
+              <div class="expand-stack">
+                <div class="expand-body work-body">
+
+                  <p>At twelve, I started turning curiosity into apps: a browser, a translator, and a random number generator. Built with App Inventor, they were my first experiments in connecting interface decisions to working logic. Small tools, lots of trial and error, and the beginning of a habit I still have: learning by making something I can use.</p>
+
+
+                  <ul class="early-apps" aria-label="Early mobile apps">
+                    <li>
+                      <a class="early-app" href="https://github.com/ardacebi/coby-browser" target="_blank" rel="noopener noreferrer">
+                        <img class="early-app-icon" src="images/projects/coby-browser.webp" alt="" width="36" height="36" loading="lazy" decoding="async">
+                        <span class="early-app-copy"><span class="early-app-name">Coby Browser</span><span class="early-app-purpose">Explore the web</span></span>
+                        <span class="early-app-arrow" aria-hidden="true">↗</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="early-app" href="https://github.com/ardacebi/tras-tras-translator" target="_blank" rel="noopener noreferrer">
+                        <img class="early-app-icon" src="images/projects/tras-tras-translator.webp" alt="" width="36" height="36" loading="lazy" decoding="async">
+                        <span class="early-app-copy"><span class="early-app-name">Tras Tras Translator</span><span class="early-app-purpose">Translate a phrase</span></span>
+                        <span class="early-app-arrow" aria-hidden="true">↗</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="early-app" href="https://github.com/ardacebi/randomer" target="_blank" rel="noopener noreferrer">
+                        <img class="early-app-icon" src="images/projects/randomer.webp" alt="" width="36" height="36" loading="lazy" decoding="async">
+                        <span class="early-app-copy"><span class="early-app-name">Randomer</span><span class="early-app-purpose">Leave it to chance</span></span>
+                        <span class="early-app-arrow" aria-hidden="true">↗</span>
+                      </a>
+                    </li></ul>
+
+                </div>
+                <div class="expand-veil" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+    </ul>
+    <p class="works-visit" style="--work-i: 5"><a href="https://github.com/ardacebi" target="_blank" rel="noopener noreferrer">Visit GitHub</a></p>
+  <!-- works:software:end --></div>
+                <div class="expand-veil" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="expand"
+            id="expand-designble"
+            data-expand-panel="designble"
+          >
+            <div class="expand-clip">
+              <div class="expand-stack">
+                <div class="expand-body" data-works-root="designble"><!-- works:designble:start -->
+    <ul class="works-list">
+
+        <li class="work" data-work="aldemir" style="--work-i: 0">
+          <button
+            class="work-trigger"
+            type="button"
+            data-work-trigger="aldemir"
+            aria-expanded="false"
+            aria-controls="work-designble-aldemir"
+          >
+            <span class="work-title">Aldemir &amp; Çolakoğlu</span>
+            <span class="work-meta">2025 · Website</span>
+          </button>
+          <div class="expand work-detail" id="work-designble-aldemir" data-work-panel="aldemir">
+            <div class="expand-clip">
+              <div class="expand-stack">
+                <div class="expand-body work-body">
+
+                  <p>I wanted a law firm’s website to feel considered and approachable. Clear information, restrained typography, and fluid transitions bring a modern rhythm to a traditionally formal setting. My guiding principle was minimalism: give every detail a purpose and every visitor a clear path.</p>
+
+
+
+                  <p class="work-link"><a href="https://aldemircolakoglu.av.tr/" target="_blank" rel="noopener noreferrer">Visit site</a></p>
+                </div>
+                <div class="expand-veil" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="work" data-work="evrim" style="--work-i: 1">
+          <button
+            class="work-trigger"
+            type="button"
+            data-work-trigger="evrim"
+            aria-expanded="false"
+            aria-controls="work-designble-evrim"
+          >
+            <span class="work-title">Özel Evrim Okulları</span>
+            <span class="work-meta">2023 · Web design and branding</span>
+          </button>
+          <div class="expand work-detail" id="work-designble-evrim" data-work-panel="evrim">
+            <div class="expand-clip">
+              <div class="expand-stack">
+                <div class="expand-body work-body">
+
+                  <p>I studied here from 2016 to 2018, and in 2023 I came back to redesign the site and the brand. The palette comes from the logo. Colour gives the pages their energy, and a clear structure keeps information easy to find.</p>
+
+
+
+                  <p class="work-link"><a href="https://evrim.k12.tr/" target="_blank" rel="noopener noreferrer">Visit site</a></p>
+                </div>
+                <div class="expand-veil" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+    </ul>
+    <p class="works-visit" style="--work-i: 2"><a href="https://designble.net/" target="_blank" rel="noopener noreferrer">Visit designble.net <span class="visit-arrow" aria-hidden="true">↗</span></a></p>
+  <!-- works:designble:end --></div>
+                <div class="expand-veil" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="expand"
+            id="expand-dribbble"
+            data-expand-panel="dribbble"
+          >
+            <div class="expand-clip">
+              <div class="expand-stack">
+                <div class="expand-body" data-works-root="dribbble"><!-- works:dribbble:start -->
+    <ul class="works-list">
+
+        <li class="work" data-work="ardacebi-com" style="--work-i: 0">
+          <button
+            class="work-trigger"
+            type="button"
+            data-work-trigger="ardacebi-com"
+            aria-expanded="false"
+            aria-controls="work-dribbble-ardacebi-com"
+          >
+            <span class="work-title">ardacebi.com</span>
+            <span class="work-meta">2026 · Web design and development</span>
+          </button>
+          <div class="expand work-detail" id="work-dribbble-ardacebi-com" data-work-panel="ardacebi-com">
+            <div class="expand-clip">
+              <div class="expand-stack">
+                <div class="expand-body work-body">
+
+                  <p>I wanted this page to feel like a quiet introduction, with more to discover if you stay. I built it around typography, small interactions, and a changing sky, letting the work unfold inside the words.</p>
+
+
+
+                  <p class="work-link">You’re here</p>
+                </div>
+                <div class="expand-veil" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="work" data-work="telegram" style="--work-i: 1">
+          <button
+            class="work-trigger"
+            type="button"
+            data-work-trigger="telegram"
+            aria-expanded="false"
+            aria-controls="work-dribbble-telegram"
+          >
+            <span class="work-title">Telegram macOS</span>
+            <span class="work-meta">2020 · Design concept</span>
+          </button>
+          <div class="expand work-detail" id="work-dribbble-telegram" data-work-panel="telegram">
+            <div class="expand-clip">
+              <div class="expand-stack">
+                <div class="expand-body work-body">
+                  <figure class="work-figure"><img src="images/dribbble/telegram.webp" alt="Telegram macOS" width="800" height="600" decoding="async" loading="lazy"></figure>
+                  <p>A macOS client concept for Telegram.</p>
+
+
+
+                  <p class="work-link"><a href="https://dribbble.com/shots/12676856-Telegram-macOS-Design-Concept" target="_blank" rel="noopener noreferrer">View on Dribbble</a></p>
+                </div>
+                <div class="expand-veil" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="work" data-work="kicad" style="--work-i: 2">
+          <button
+            class="work-trigger"
+            type="button"
+            data-work-trigger="kicad"
+            aria-expanded="false"
+            aria-controls="work-dribbble-kicad"
+          >
+            <span class="work-title">KiCad Suite</span>
+            <span class="work-meta">2020 · Icon concept</span>
+          </button>
+          <div class="expand work-detail" id="work-dribbble-kicad" data-work-panel="kicad">
+            <div class="expand-clip">
+              <div class="expand-stack">
+                <div class="expand-body work-body">
+                  <figure class="work-figure"><img src="images/dribbble/kicad.webp" alt="KiCad Suite" width="800" height="600" decoding="async" loading="lazy"></figure>
+                  <p>Big Sur icon concepts for the KiCad suite.</p>
+
+
+
+                  <p class="work-link"><a href="https://dribbble.com/shots/12575384-KiCad-Suite-macOS-Big-Sur-Icon-Concept" target="_blank" rel="noopener noreferrer">View on Dribbble</a></p>
+                </div>
+                <div class="expand-veil" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="work" data-work="iterm2" style="--work-i: 3">
+          <button
+            class="work-trigger"
+            type="button"
+            data-work-trigger="iterm2"
+            aria-expanded="false"
+            aria-controls="work-dribbble-iterm2"
+          >
+            <span class="work-title">iTerm2</span>
+            <span class="work-meta">2020 · Icon concept</span>
+          </button>
+          <div class="expand work-detail" id="work-dribbble-iterm2" data-work-panel="iterm2">
+            <div class="expand-clip">
+              <div class="expand-stack">
+                <div class="expand-body work-body">
+                  <figure class="work-figure"><img src="images/dribbble/iterm2.webp" alt="iTerm2" width="800" height="600" decoding="async" loading="lazy"></figure>
+                  <p>A Big Sur icon concept for iTerm2.</p>
+
+
+
+                  <p class="work-link"><a href="https://dribbble.com/shots/12265146-iTerm2-macOS-Big-Sur-Icon-Concept" target="_blank" rel="noopener noreferrer">View on Dribbble</a></p>
+                </div>
+                <div class="expand-veil" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="work" data-work="decury" style="--work-i: 4">
+          <button
+            class="work-trigger"
+            type="button"
+            data-work-trigger="decury"
+            aria-expanded="false"
+            aria-controls="work-dribbble-decury"
+          >
+            <span class="work-title">Decury</span>
+            <span class="work-meta">2020 · Brand guidelines</span>
+          </button>
+          <div class="expand work-detail" id="work-dribbble-decury" data-work-panel="decury">
+            <div class="expand-clip">
+              <div class="expand-stack">
+                <div class="expand-body work-body">
+                  <figure class="work-figure"><img src="images/dribbble/decury.webp" alt="Decury" width="800" height="600" decoding="async" loading="lazy"></figure>
+                  <p>Brand identity and guidelines for Decury.</p>
+
+
+
+                  <p class="work-link"><a href="https://dribbble.com/shots/10812487-Decury-Brand-Design-Identity-Guidelines" target="_blank" rel="noopener noreferrer">View on Dribbble</a></p>
+                </div>
+                <div class="expand-veil" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+        </li>
+    </ul>
+    <p class="works-visit" style="--work-i: 5"><a href="https://dribbble.com/ardacebi" target="_blank" rel="noopener noreferrer">Visit Dribbble</a></p>
+  <!-- works:dribbble:end --></div>
+                <div class="expand-veil" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="popover-layer" data-popover-layer>
+      <div class="popover-backdrop" data-popover-backdrop hidden></div>
+      <div
+        class="popover-panel"
+        id="site-popover"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Options"
+        tabindex="-1"
+        data-popover-panel
+        hidden
+        inert
+      >
+        <div class="popover-view" data-popover-view="email" hidden>
+          <div class="popover-actions">
+            <button type="button" class="popover-action" data-email-copy>
+              <span class="popover-action-icon" aria-hidden="true">
+                <svg class="icon-copy" viewBox="0 0 16 16">
+                  <rect x="5.5" y="5.5" width="8" height="8" rx="1.25"></rect>
+                  <path
+                    d="M10.5 5.5V4.25A1.25 1.25 0 0 0 9.25 3h-6A1.25 1.25 0 0 0 2 4.25v6A1.25 1.25 0 0 0 3.25 11.5H4.5"
+                  ></path>
+                </svg>
+                <svg class="icon-check" viewBox="0 0 16 16">
+                  <path d="M3.5 8.5 6.5 11.5 12.5 4.5"></path>
+                </svg>
+              </span>
+              <span class="popover-action-text">
+                <span data-copy-idle>Copy email</span>
+                <span data-copy-done>Copied</span>
+              </span>
+            </button>
+            <button type="button" class="popover-action" data-email-send>
+              <span class="popover-action-icon" aria-hidden="true">
+                <svg viewBox="0 0 16 16">
+                  <rect x="2" y="3.5" width="12" height="9" rx="1.25"></rect>
+                  <path d="M2.5 5 8 8.75 13.5 5"></path>
+                </svg>
+              </span>
+              Send email
+            </button>
+          </div>
+        </div>
+        <div class="popover-view" data-popover-view="egg" data-nosnippet hidden>
+          <p class="popover-text" data-egg-title></p>
+          <div class="egg-more" data-egg-more>
+            <div class="egg-more-clip">
+              <p class="popover-text egg-detail" data-egg-detail></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/site.js?v=cinema-20260908" defer></script>
+    <script src="js/sky.js?v=cinema-20260908" defer></script>
+    <script src="js/popover.js?v=email-20260911" defer></script>
+    <script src="js/email.js?v=email-20260911" defer></script>
+    <script src="js/egg.js?v=egg-source-20261015" defer></script>
+    <script src="js/works.js?v=projects-20260912" defer></script>
+    <script src="js/work-markup.js?v=small-icons-20260912" defer></script>
+    <script src="js/expand.js?v=preview-fixed-20261015" defer></script>
+    <script src="js/glimpses.js?v=launch-20260912" defer></script>
+    <script src="js/glimpse.js?v=cinema-20260908" defer></script>
+    <script src="js/scenes.js?v=launch-20260912" defer></script>
+  </body>
 </html>
