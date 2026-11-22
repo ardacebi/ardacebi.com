@@ -2,7 +2,7 @@
 
 > Computer science student at the University of Bologna. Designs and builds software. Co-founder of Designble. Based in Bologna, Italy.
 
-A plain-text summary of the public website, last updated 2026-10-15.
+A plain-text summary of the public website, last updated 2026-11-22.
 
 ## Identity
 
@@ -25,7 +25,7 @@ A plain-text summary of the public website, last updated 2026-10-15.
 - Email: ardacebi@me.com
 - GitHub: https://github.com/ardacebi
 - LinkedIn: https://www.linkedin.com/in/ardacebi
-- X: https://x.com/ardacebie
+- X: https://x.com/ardacebi
 - Designble: https://designble.net
 - University of Bologna: https://www.unibo.it/en
 
